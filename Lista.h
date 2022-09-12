@@ -1,16 +1,22 @@
 #ifndef LISTA_H
 #define LISTA_H
 
+#include "Nodo.h"
+#include<iostream>
 
 class Lista
 {
     public:
         Lista();
-        virtual ~Lista();
+        Lista(Nodo*);
 
-    protected:
+        Nodo *h;
 
-    private:
+        //Operaciones
+
+        void insertarInicio(int);
+        void mostrar(void);
+
 };
 
 #endif // LISTA_H
